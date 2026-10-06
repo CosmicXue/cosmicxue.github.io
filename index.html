@@ -98,6 +98,16 @@
   .photo{margin:0}
   .photo img{width:100%;display:block;border-radius:14px;border:1px solid var(--line)}
   .photo figcaption{margin-top:12px;font-size:14px;color:var(--muted)}
+  .projects{margin-top:64px}
+  .proj{list-style:none;counter-reset:p;border-top:1px solid var(--line)}
+  .proj li{counter-increment:p;position:relative;padding:26px 0 26px 56px;border-bottom:1px solid var(--line)}
+  .proj li::before{content:counter(p,decimal-leading-zero);position:absolute;left:0;top:28px;font:300 22px var(--serif);color:var(--accent)}
+  .proj h4{font-family:var(--serif);font-weight:400;font-size:20px;line-height:1.4}
+  body.zh .proj h4{font-family:"Noto Serif SC",serif}
+  .proj p{color:#c3cad8;margin-top:6px;font-size:15px}
+  .kw{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .kw>span{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:2px 10px}
+  .kw .fund{color:var(--accent);border-color:rgba(242,166,90,.35)}
   .pubs{list-style:none}
   .pubs li{display:grid;grid-template-columns:64px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
   .pubs li:first-child{padding-top:0}
@@ -204,22 +214,27 @@
           <h3><span data-en>Critical Metal Deposits</span><span data-zh>关键金属矿床</span></h3>
           <p><span data-en>Studying critical metal deposits using isotopes and AI methods.</span><span data-zh>用同位素与人工智能方法研究关键金属矿床。</span></p>
         </div></div>
-        <div class="feature">
-          <div class="label"><span data-en>Current project</span><span data-zh>当前课题</span></div>
-          <h3><span data-en>Zn–Cu–Fe–Si isotopes of the Jinchuan Ni-Cu-PGE deposit</span><span data-zh>金川 Ni-Cu-PGE 矿床的 Zn–Cu–Fe–Si 同位素</span></h3>
-          <p class="prose"><span data-en>Using Zn, Cu, Fe and Si isotopes to understand the formation of the Jinchuan deposit.</span><span data-zh>利用 Zn、Cu、Fe、Si 同位素研究金川矿床的形成。</span></p>
-        </div>
       </div>
 
-      <div class="feature">
-        <div class="label"><span data-en>Current project</span><span data-zh>当前课题</span></div>
-        <h3><span data-en>Zircon Zr isotopes and the onset of plate tectonics</span><span data-zh>锆石 Zr 同位素与板块构造的起始</span></h3>
-        <p class="prose"><span data-en>Using Zr isotopes in zircon to constrain when plate tectonics began on Earth.</span><span data-zh>利用锆石 Zr 同位素约束地球板块构造的起始时间。</span></p>
-      </div>
-      <div class="feature">
-        <div class="label"><span data-en>Current project</span><span data-zh>当前课题</span></div>
-        <h3><span data-en>Mg isotopes during mantle melting</span><span data-zh>地幔熔融中的 Mg 同位素</span></h3>
-        <p class="prose"><span data-en>Understanding how Mg isotopes fractionate during mantle melting.</span><span data-zh>理解地幔熔融过程中 Mg 同位素如何分馏。</span></p>
+      <div class="projects">
+        <div class="pub-group"><span data-en>Current Projects</span><span data-zh>在研课题</span></div>
+        <ol class="proj">
+          <li>
+            <h4><span data-en>Zircon Zr isotope constraints on the onset of plate tectonics</span><span data-zh>锆石 Zr 同位素对板块构造起始的约束</span></h4>
+            <p><span data-en>Zircons are the oldest surviving record of Earth's continental crust. This project develops process-sensitive Zr isotope systematics in zircon as a tracer of magmatic and tectonic setting, combining high-precision isotope analysis with geochemical modeling to constrain when modern-style plate tectonics began.</span><span data-zh>锆石是地球大陆地壳最古老的保存记录。本课题发展对过程敏感的锆石 Zr 同位素体系作为岩浆与构造环境的示踪剂，结合高精度同位素分析与地球化学模拟，约束现代板块构造开始运作的时间。</span></p>
+            <div class="kw"><span>Zircon</span><span>Zr isotopes</span><span>Early Earth</span><span class="fund"><span data-en>GSA Lipman Research Award</span><span data-zh>GSA Lipman 研究奖资助</span></span></div>
+          </li>
+          <li>
+            <h4><span data-en>Zn–Cu–Fe–Si isotope tracing of ore formation at the Jinchuan Ni–Cu–PGE deposit</span><span data-zh>金川 Ni–Cu–PGE 矿床成矿过程的 Zn–Cu–Fe–Si 同位素示踪</span></h4>
+            <p><span data-en>Jinchuan is one of the world's largest magmatic Ni–Cu–PGE sulfide deposits. By comparing mineralized and barren ultramafic rocks, this project applies multiple metal stable isotope systems to trace the sources of ore-forming components and the evolution of the magmatic sulfide system.</span><span data-zh>金川是世界上最大的岩浆 Ni–Cu–PGE 硫化物矿床之一。本课题对比含矿与不含矿超基性岩，利用多种金属稳定同位素体系，示踪成矿物质的来源与岩浆硫化物体系的演化。</span></p>
+            <div class="kw"><span><span data-en>Magmatic sulfide deposits</span><span data-zh>岩浆硫化物矿床</span></span><span><span data-en>Critical metals</span><span data-zh>关键金属</span></span><span><span data-en>Metal stable isotopes</span><span data-zh>金属稳定同位素</span></span></div>
+          </li>
+          <li>
+            <h4><span data-en>Magnesium isotope fractionation during mantle partial melting</span><span data-zh>地幔部分熔融过程中的 Mg 同位素分馏</span></h4>
+            <p><span data-en>Mg isotopes are widely used to trace recycled materials in mantle sources, yet Mg isotope fractionation during mantle melting remains poorly constrained. This project combines theoretical calculations with petrological modeling to quantify this fractionation across mantle lithologies and improve the interpretation of δ<sup>26</sup>Mg in mantle-derived basalts.</span><span data-zh>Mg 同位素被广泛用于示踪地幔源区中的再循环物质，但地幔熔融过程中的 Mg 同位素分馏仍缺乏约束。本课题结合理论计算与岩石学模拟，定量研究不同地幔岩性熔融时的 Mg 同位素分馏，以更准确地解释幔源玄武岩的 δ<sup>26</sup>Mg。</span></p>
+            <div class="kw"><span>Mg isotopes</span><span><span data-en>Mantle melting</span><span data-zh>地幔熔融</span></span><span><span data-en>Theoretical modeling</span><span data-zh>理论模拟</span></span></div>
+          </li>
+        </ol>
       </div>
     </div>
   </section>
